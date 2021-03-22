@@ -1,0 +1,50 @@
+.carousel {
+    margin-bottom: 3rem;
+  }
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+
+
+  .btn-outline-warning:hover{
+      color: #fff;
+  }
+.intro_img{
+    width:90%
+}
+
+.intro_container{
+    padding:0 25px;
+}
+.intro_ul{
+    list-style-image: url("./img/check.svg");
+}
+@media (min-width: 768px){
+    .price_container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 992px){
+    .intro_p{
+        padding-right: 150px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .intro_container{
+        max-width: 1170px;
+    }
+}

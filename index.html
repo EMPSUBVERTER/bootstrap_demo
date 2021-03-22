@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <title>title</title>
+</head>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light  bg-white p-2 px-md-3 shadow-sm ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Company Name</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-md-3">
+            <li class="nav-item ">
+              <a class="nav-link active me-3" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#">Link</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search...">
+              <button class="btn btn-primary" type="button">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- 轮播图区域 -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/15.-Perfume_1.jpg" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1> example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/35.-Ronchi.jpg"  alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1> example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/91.-Berry.jpg"  alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1> example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- 介绍区域 -->
+    <div class="container my-5 intro_container mx-auto">
+      <div class="row ">
+        <div class="d-block d-md-none">
+          <img src="./img/writeSQL.png" class="intro_img" >
+      </div>
+        <div class="col-md-6 my-auto">
+            <h3 class="my-4">Write queries effectively</h3>
+            <p class="my-3 text-muted intro_p">Enjoy the power and comfort of a SQL client with the collaborative advantages of a cloud based service.</p>
+            <ul class="my-3 intro_ul">
+              <li class="mb-2">Powerful online SQL editor</li>
+              <li class="mb-2">Browse schema and click-to-insert</li>
+              <li class="mb-2">Create snippets and reuse them</li>
+            </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+            <img src="./img/writeSQL.png" class="intro_img" >
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 intro_container mx-auto">
+      <div class="row ">
+        <div class="col-md-6 ">
+          <img src="./img/data.png" class="intro_img" >
+      </div>
+        <div class="col-md-6 my-auto">
+            <h3 class="my-4">Visualize your data on dashboards</h3>
+            <p class="my-3 text-muted intro_p">Always see the big, easy to digest picture for deeper understanding and better decision making.</p>
+            <ul class="my-3 intro_ul">
+              <li class="mb-2">Drag & Drop and resize any visualization</li>
+              <li class="mb-2">Schedule refresh from your data sources</li>
+              <li class="mb-2">Share dashboards with your team or with the public</li>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- 价格区域 -->
+    <div class="bg-light">
+    <div class="container price_container py-5">
+      <h1 class="text-center mb-3 text-muted">Price</h1>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col my-2">
+          <div class="card mb-4 shadow-sm ">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+        </div>
+        <div class="col my-2">
+          <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-warning text-white">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-warning ">Get started</button>
+          </div>
+        </div>
+        </div>
+        <div class="col my-2">
+          <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-warning text-white">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-warning text-white">Contact us</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div></div>
+  </main>
+  <footer class="my-5  text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
